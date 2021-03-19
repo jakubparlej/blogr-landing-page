@@ -1,0 +1,44 @@
+.footer {
+  background: $veryDarkBlackBlue;
+  text-align: center;
+  padding: 4rem 0 1.5rem 0;
+  border-top-right-radius: 6.25rem;
+
+  @include media(tablet) {
+    text-align: left;
+  }
+
+  &__columns {
+    @include media(tablet) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__column {
+
+    img {
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 3rem;
+    }
+
+    li {
+      margin: 1rem 0;
+      padding: 0;
+
+      a {
+        color: $grayishBlue;
+      }
+    }
+
+    a.title {
+      color: white;
+    }
+
+  }
+}
