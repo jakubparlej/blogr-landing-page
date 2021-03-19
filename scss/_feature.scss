@@ -1,0 +1,68 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient($veryDarkGrayBlue, $veryDarkDesaturatedBlue);
+  margin: 5rem 0;
+  padding: 6rem 0;
+  border-top-right-radius: 6.25rem;
+  border-bottom-left-radius: 6.25rem;
+
+  @include media(tablet) {
+    background: linear-gradient(to right, $veryDarkGrayBlue, $veryDarkDesaturatedBlue);
+    padding: 3rem 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include media(tablet) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    margin-top: -12rem;
+
+    @include media(tablet) {
+      margin: -6rem 6rem -9rem -3rem;
+      flex-basis: 50%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  &__text {
+    text-align: center;
+
+    @include media(tablet) {
+      text-align: left;
+      flex-basis: 50%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: white;
+
+      @include media(tablet) {
+        font-size: 1.875rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+      color: $grayishBlue;
+
+      @include media(tablet) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

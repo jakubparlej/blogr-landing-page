@@ -1,0 +1,76 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $veryDarkBlue;
+  padding: 5.5rem 0 5.5rem 0;
+
+  @include media(tablet) {
+    flex-flow: row-reverse wrap;
+    padding: 8rem 0 15rem 0;
+    background: url(/images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 47%;
+    background-position: 110% center;
+  }
+
+  &__title {
+    order: 0;
+
+    @include media(tablet) {
+      flex-basis: 100%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+
+      @include media(tablet) {
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+      }
+    }
+
+
+  }
+
+  &__text {
+    order: 2;
+
+    @include media(tablet) {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin: 3rem 0 1.625rem 0;
+
+      @include media(tablet) {
+        font-size: 1.625rem;
+        margin: 3rem 0 1.625rem 0;
+      }
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+      color: $veryDarkGraishBlue;
+
+      @include media(tablet) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @include media(tablet) {
+      display: none;
+    }
+  }
+}
