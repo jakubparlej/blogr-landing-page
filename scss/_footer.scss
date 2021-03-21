@@ -1,8 +1,8 @@
 .footer {
-  background: $veryDarkBlackBlue;
-  text-align: center;
   padding: 4rem 0 1.5rem 0;
   border-top-right-radius: 6.25rem;
+  background: $veryDarkBlackBlue;
+  text-align: center;
 
   @include media(tablet) {
     text-align: left;
@@ -22,9 +22,9 @@
     }
 
     ul {
-      list-style: none;
       padding: 0;
       margin-bottom: 3rem;
+      list-style: none;
     }
 
     li {

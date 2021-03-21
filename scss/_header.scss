@@ -1,22 +1,22 @@
 .header {
-  text-align: center;
-  color: white;
-  background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   padding-bottom: 8.5rem;
   border-bottom-left-radius: 6.25rem;
+  background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  color: white;
+  text-align: center;
 
   @include media(tablet) {
     padding-bottom: 9.75rem;
   }
 
   h1 {
+    margin-bottom: 1.25rem;
     font-size: 1.5rem;
     font-weight: 500;
-    margin-bottom: 1.25rem;
 
     @include media(tablet) {
-      font-size: 3rem;
       margin-bottom: 1.5rem;
+      font-size: 3rem;
     }
   }
 
@@ -38,15 +38,15 @@
 }
 
 .nav {
-  padding: 3rem 0 4.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 3rem 0 4.5rem 0;
 
   @include media(tablet) {
-    padding: 3rem 0 8.5rem 0;
     justify-content: flex-start;
     align-items: center;
+    padding: 3rem 0 8.5rem 0;
   }
 }
 
@@ -76,8 +76,8 @@
 }
 
 .menu {
-  display: none;
   position: relative;
+  display: none;
 
   &__item {
     display: block;
@@ -85,9 +85,7 @@
 
     @include media(tablet) {
       display: inline-block;
-      margin-right: 2rem;
-      margin-top: 0;
-      margin-bottom: 0;
+      margin: 0 2rem 0 0;
     }
   }
 
@@ -104,13 +102,13 @@
     left: 1.5rem;
     right: 1.5rem;
     display: flex;
-    border-radius: 0.5rem;
-    padding: 2rem 0;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 2rem 0;
+    border-radius: 0.5rem;
     background: white;
     font-weight: bold;
-    flex-direction: column;
 
     a {
       color: $veryDarkBlue;
@@ -131,9 +129,9 @@
       justify-content: space-between;
       flex-direction: row;
       align-items: center;
+      padding: 0;
       margin-left: 2rem;
       border: none;
-      padding: 0;
 
       a {
         margin-top: 0;
@@ -145,16 +143,16 @@
 
 .button {
   width: 7.5rem;
-  font-size: 0.75rem;
   padding: 0.875rem;
+  margin-top: 1rem;
   border-radius: 3rem;
   border: none;
-  color: $lightRed;
   background-color: white;
+  color: $lightRed;
+  font-size: 0.75rem;
   font-weight: 700;
   cursor: pointer;
   transition: all .2s ease-in-out;
-  margin-top: 1rem;
 
   @include media(tablet) {
     width: 8.5rem;
@@ -167,8 +165,8 @@
   }
 
   &--alpha {
-    background-color: transparent;
     border: 1px solid white;
+    background-color: transparent;
     color: white;
 
     &:hover {
@@ -178,8 +176,8 @@
   }
 
   &--red {
-    color: white;
     background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: white;
     font-size: 1rem;
   }
 }

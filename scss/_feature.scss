@@ -1,15 +1,15 @@
 .feature {
   display: flex;
   flex-direction: column;
-  background: linear-gradient($veryDarkGrayBlue, $veryDarkDesaturatedBlue);
   margin: 5rem 0;
   padding: 6rem 0;
   border-top-right-radius: 6.25rem;
   border-bottom-left-radius: 6.25rem;
+  background: linear-gradient($veryDarkGrayBlue, $veryDarkDesaturatedBlue);
 
   @include media(tablet) {
-    background: linear-gradient(to right, $veryDarkGrayBlue, $veryDarkDesaturatedBlue);
     padding: 3rem 0;
+    background: linear-gradient(to right, $veryDarkGrayBlue, $veryDarkDesaturatedBlue);
   }
 
   &__container {
@@ -40,25 +40,25 @@
     text-align: center;
 
     @include media(tablet) {
-      text-align: left;
       flex-basis: 50%;
+      text-align: left;
     }
 
     h2 {
-      font-size: 1.5rem;
       margin-bottom: 1rem;
       color: white;
+      font-size: 1.5rem;
 
       @include media(tablet) {
-        font-size: 1.875rem;
         margin-bottom: 2rem;
+        font-size: 1.875rem;
       }
     }
 
     p {
+      color: $grayishBlue;
       font-size: 0.75rem;
       line-height: 1.5rem;
-      color: $grayishBlue;
 
       @include media(tablet) {
         font-size: 1rem;
